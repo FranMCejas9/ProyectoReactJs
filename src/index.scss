@@ -1,0 +1,94 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$secondaryColor: #880088;
+
+
+.Header, .Footer{
+    background-color: #333;
+    max-width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    .Brand{
+        text-align: center;
+        width: 20vw;
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: aliceblue;
+        span{
+            color: $secondaryColor;
+        }
+    }
+    ul{
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        a{
+            padding: 0.2rem;
+            border-radius: 0.2rem;
+            font-size: 1.2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            color: aliceblue;
+            &:hover{
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                color: #333;
+                transition: all 0.4s;
+            }
+        }
+    }
+}
+.Footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    ul{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        a{
+            padding: 0.2rem;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            color: aliceblue;
+            &:hover{
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                color: #333;
+                transition: all 0.4s;
+            }
+        }
+    }
+}
+.Icon{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        color: $secondaryColor;
+    }
+}
+.Main{
+    max-width: 100vw;
+    height: 100vh;
+    div{
+        width: 100vw;
+        background-color: $secondaryColor;
+        color: #fff;
+        text-align: center;
+    }
+}
